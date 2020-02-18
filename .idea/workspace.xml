@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc73e571-247f-45e4-a862-77642be62a87" name="Default Changelist" comment="" />
+    <list default="true" id="dc73e571-247f-45e4-a862-77642be62a87" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +20,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1Y04SAPaVUKST4VYANq9R2xjt6G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -38,13 +41,33 @@
       <option name="presentableId" value="Default" />
       <updated>1582066174346</updated>
     </task>
+    <task id="LOCAL-00001" summary="Commit new board">
+      <created>1582067276763</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582067276763</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commit for new project">
+      <created>1582067362471</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582067362471</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit new board" />
+    <MESSAGE value="Commit for new project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit for new project" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="408" y="3" key="CommitChangelistDialog2" timestamp="1582067343112">
+    <state x="408" y="3" key="CommitChangelistDialog2" timestamp="1582067361017">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="408" y="3" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582067343112" />
+    <state x="408" y="3" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582067361017" />
     <state width="1342" height="195" key="GridCell.Tab.0.bottom" timestamp="1582067040022">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -61,9 +84,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1342" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582067040022" />
-    <state x="346" y="129" key="Vcs.Push.Dialog.v2" timestamp="1582067307500">
+    <state x="346" y="129" key="Vcs.Push.Dialog.v2" timestamp="1582067387353">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="346" y="129" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582067307500" />
+    <state x="346" y="129" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582067387353" />
   </component>
 </project>
