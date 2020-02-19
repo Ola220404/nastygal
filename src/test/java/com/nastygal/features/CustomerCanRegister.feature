@@ -23,7 +23,6 @@ Feature: Register for a new account
       |Mr    |Joss      |Ola     |13/04/1980 |M     |Auuto@mailinator.com| Boohoo123|
       |Mr    |Joss     |  Ola    |           |M     |Auuto@mailinator.com |Boohoo123|
 
-
   Scenario Outline: Customer cannot register with missing field
     Given I navigate to nastygal homepage
     When I click on the image icon and select register to display the register form
@@ -42,3 +41,5 @@ Feature: Register for a new account
     Examples:
       |Title| FirstName|LastName|DateOfBirth|Gender|EmailAddress        |Password|
       |Mr    |Joss      |Ola     |13/04/1980 |M     |           | Boohoo123|
+
+
