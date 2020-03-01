@@ -1,3 +1,5 @@
+
+
 package com.nastygal.runner;
 
 
@@ -9,8 +11,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
         features = {"src/test/java/com/nastygal/features"}
-        ,plugin = {"pretty", "json:target/report.json",}
-        ,glue = {"com/nastygal/stepDefinations"}
+        ,plugin = {"pretty", "json:target/report.json","de.monochromata.cucumber.report.PrettyReports:target/pretty-cucumber"}
+        ,glue = {"src/test/java/com/nastygal/hooks", "com/nastygal/stepDefinations"}
+        ,tags = {"not @ignore"}
 )
-public class TestRunner {
+public class TestRunner{
 }

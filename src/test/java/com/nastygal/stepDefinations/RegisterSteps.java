@@ -1,272 +1,78 @@
 package com.nastygal.stepDefinations;
 
+import com.nastygal.pages.BasePage;
+import com.nastygal.pages.HomePage;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 
-public class RegisterSteps {
+public class RegisterSteps extends BasePage
+{
 
-    WebDriver driver;
-
-    @Given("I navigate to nastygal homepage")
-    public void i_navigate_to_nastygal_homepage() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-
-        driver.navigate().to("https://www.nastygal.com/");
-
-
-    }
-    @When("I click on the image icon and select register to display the register form")
-    public void i_click_on_the_image_icon_and_select_register_to_display_the_register_form() {
-
-    }
-    @When("I enter {string} in the tittle field")
-    public void i_enter_in_the_tittle_field(String string) {
-
-    }
-    @When("I enter {string} in the first name field")
-    public void i_enter_in_the_first_name_field(String string) {
-
-    }
-    @When("I enter {string} in the last name field")
-    public void i_enter_in_the_last_name_field(String string) {
-
-    }
-    @When("I enter {string} in the date of birth field")
-    public void i_enter_in_the_date_of_birth_field(String string) {
-
-    }
-    @When("I select {string} from the gender dropdown")
-    public void i_select_from_the_gender_dropdown(String string) {
-
-    }
-    @When("I enter {string} in the email address field")
-    public void i_enter_in_the_email_address_field(String string) {
-
-    }
-    @When("I enter {string} in the confirm email address field")
-    public void i_enter_in_the_confirm_email_address_field(String string) {
-
-    }
-    @When("I enter {string} in the password field")
-    public void i_enter_in_the_password_field(String string) {
-
-    }
-    @When("I enter {string} in the confirm password field")
-    public void i_enter_in_the_confirm_password_field(String string) {
-
-    }
-    @When("I click on {string}")
-    public void i_click_on(String string) {
-
-    }
-    @Then("I get an error message or a prompt for the missing field")
-    public void i_get_an_error_message_or_a_prompt_for_the_missing_field() {
-
-    }
-
-
-
+    HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 
     @Given("I navigate to nastygal homepage")
     public void i_navigate_to_nastygal_homepage() {
-
+        launchUrl();
     }
 
-    @When("I click on the image icon and select register to display the register form")
-    public void i_click_on_the_image_icon_and_select_register_to_display_the_register_form() {
+    @When("I click on My Account")
+    public void iClickOnMyAccount() {
 
     }
-
-    @When("I enter {string} in the tittle field")
-    public void i_enter_in_the_tittle_field(String string) {
-
+    @And("I click on Create Account")
+    public void iClickOnCreateAccount() {
     }
 
-    @When("I enter {string} in the first name field")
-    public void i_enter_in_the_first_name_field(String string) {
-
+    @And("I enter {string} in the tittle field")
+    public void iEnterInTheTittleField(String sex) {
     }
 
-    @When("I enter {string} in the last name field")
-    public void i_enter_in_the_last_name_field(String string) {
-
+    @And("I enter {string} in the first name field")
+    public void iEnterInTheFirstNameField(String arg0) {
     }
 
-    @When("I enter {string} in the date of birth field")
-    public void i_enter_in_the_date_of_birth_field(String string) {
-
+    @And("I enter {string} in the last name field")
+    public void iEnterInTheLastNameField(String arg0) {
     }
 
-    @When("I select {string} from the gender dropdown")
-    public void i_select_from_the_gender_dropdown(String string) {
-
+    @And("I enter {string} in the date of birth field")
+    public void iEnterInTheDateOfBirthField(String arg0) {
     }
 
-    @When("I enter {string} in the email address field")
-    public void i_enter_in_the_email_address_field(String string) {
-
+    @And("I select {string} from the gender dropdown")
+    public void iSelectFromTheGenderDropdown(String arg0) {
     }
 
-    @When("I enter {string} in the confirm email address field")
-    public void i_enter_in_the_confirm_email_address_field(String string) {
-
+    @And("I enter {string} in the email address field")
+    public void iEnterInTheEmailAddressField(String arg0) {
     }
 
-    @When("I enter {string} in the password field")
-    public void i_enter_in_the_password_field(String string) {
-
+    @And("I enter {string} in the confirm email address field")
+    public void iEnterInTheConfirmEmailAddressField(String arg0) {
     }
 
-    @When("I enter {string} in the confirm password field")
-    public void i_enter_in_the_confirm_password_field(String string) {
-
+    @And("I enter {string} in the password field")
+    public void iEnterInThePasswordField(String arg0) {
     }
 
-    @When("I click on {string}")
-    public void i_click_on(String string) {
+    @And("I enter {string} in the confirm password field")
+    public void iEnterInTheConfirmPasswordField(String arg0) {
+    }
 
+    @And("I click on {string}")
+    public void iClickOn(String arg0) {
     }
 
     @Then("I am taken to {string} homepage")
-    public void i_am_taken_to_homepage(String string) {
-
-    }
-
-    @Given("I navigate to nastygal homepage")
-    public void i_navigate_to_nastygal_homepage() {
-
-    }
-
-    @When("I click on the image icon and select register to display the register form")
-    public void i_click_on_the_image_icon_and_select_register_to_display_the_register_form() {
-
-    }
-
-    @When("I enter {string} in the tittle field")
-    public void i_enter_in_the_tittle_field(String string) {
-
-    }
-
-    @When("I enter {string} in the first name field")
-    public void i_enter_in_the_first_name_field(String string) {
-
-    }
-
-    @When("I enter {string} in the last name field")
-    public void i_enter_in_the_last_name_field(String string) {
-
-    }
-
-    @When("I enter {string} in the date of birth field")
-    public void i_enter_in_the_date_of_birth_field(String string) {
-
-    }
-
-    @When("I select {string} from the gender dropdown")
-    public void i_select_from_the_gender_dropdown(String string) {
-
-    }
-
-    @When("I enter {string} in the email address field")
-    public void i_enter_in_the_email_address_field(String string) {
-
-    }
-
-    @When("I enter {string} in the confirm email address field")
-    public void i_enter_in_the_confirm_email_address_field(String string) {
-
-    }
-
-    @When("I enter {string} in the password field")
-    public void i_enter_in_the_password_field(String string) {
-
-    }
-
-    @When("I enter {string} in the confirm password field")
-    public void i_enter_in_the_confirm_password_field(String string) {
-
-    }
-
-    @When("I click on {string}")
-    public void i_click_on(String string) {
-
-    }
-
-    @Then("I am taken to {string} homepage")
-    public void i_am_taken_to_homepage(String string) {
-
-    }
-
-    @Given("I navigate to nastygal homepage")
-    public void i_navigate_to_nastygal_homepage() {
-
-    }
-
-    @When("I click on the image icon and select register to display the register form")
-    public void i_click_on_the_image_icon_and_select_register_to_display_the_register_form() {
-
-    }
-
-    @When("I enter {string} in the tittle field")
-    public void i_enter_in_the_tittle_field(String string) {
-
-    }
-
-    @When("I enter {string} in the first name field")
-    public void i_enter_in_the_first_name_field(String string) {
-
-    }
-
-    @When("I enter {string} in the last name field")
-    public void i_enter_in_the_last_name_field(String string) {
-
-    }
-
-    @When("I enter {string} in the date of birth field")
-    public void i_enter_in_the_date_of_birth_field(String string) {
-
-    }
-
-    @When("I select {string} from the gender dropdown")
-    public void i_select_from_the_gender_dropdown(String string) {
-
-    }
-
-    @When("I enter {string} in the email address field")
-    public void i_enter_in_the_email_address_field(String string) {
-
-    }
-
-    @When("I enter {string} in the confirm email address field")
-    public void i_enter_in_the_confirm_email_address_field(String string) {
-
-    }
-
-    @When("I enter {string} in the password field")
-    public void i_enter_in_the_password_field(String string) {
-
-    }
-
-    @When("I enter {string} in the confirm password field")
-    public void i_enter_in_the_confirm_password_field(String string) {
-
-    }
-
-    @When("I click on {string}")
-    public void i_click_on(String string) {
-
+    public void iAmTakenToHomepage(String arg0) {
     }
 
     @Then("I get an error message or a prompt for the missing field")
-    public void i_get_an_error_message_or_a_prompt_for_the_missing_field() {
-
+    public void iGetAnErrorMessageOrAPromptForTheMissingField() {
     }
-
 
 
 }
