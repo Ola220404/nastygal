@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
 
         features = {"src/test/java/com/nastygal/features"}
         ,plugin = {"pretty", "json:target/report.json","de.monochromata.cucumber.report.PrettyReports:target/pretty-cucumber"}
-        ,glue = {"src/test/java/com/nastygal/hooks", "com/nastygal/stepDefinations"}
+        ,glue = {"com/nastygal/hooks", "com/nastygal/stepDefinations"}
         ,tags = {"not @ignore"}
 )
 public class TestRunner{
