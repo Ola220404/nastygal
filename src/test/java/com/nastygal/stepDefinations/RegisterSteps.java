@@ -16,10 +16,12 @@ public class RegisterSteps extends BasePage
     @Given("I navigate to nastygal homepage")
     public void i_navigate_to_nastygal_homepage() {
         launchUrl();
+
     }
 
     @When("I click on My Account")
     public void iClickOnMyAccount() {
+     homePage.myAccount.click();
 
     }
     @And("I click on Create Account")

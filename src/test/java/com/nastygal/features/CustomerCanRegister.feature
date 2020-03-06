@@ -5,7 +5,7 @@ Feature: Register for a new account
 
   Scenario Outline: Customer can register
     Given I navigate to nastygal homepage
-    When I click on "<My Account>"
+    When I click on My Account
     And I click on "<CREATE ACCOUNT>"
     And I enter "<Title>" in the tittle field
     And I enter "<FirstName>" in the first name field
