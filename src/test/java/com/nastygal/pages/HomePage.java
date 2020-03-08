@@ -14,7 +14,7 @@ public class HomePage extends BasePage {
         PageFactory.initElements(driver, this);
 
     }
-     @FindBy(className = "user-link-item link-item-login")
+     @FindBy(css = ".user-link-item.link-item-login")
      public WebElement myAccount;
 
 }
