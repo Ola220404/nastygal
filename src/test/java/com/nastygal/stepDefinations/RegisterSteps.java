@@ -21,8 +21,13 @@ public class RegisterSteps extends BasePage
 
     @When("I click on My Account")
     public void iClickOnMyAccount() {
-     homePage.myAccount.click();
+     homePage.clickOnMyAccount();
 
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
     @And("I click on Create Account")
     public void iClickOnCreateAccount() {

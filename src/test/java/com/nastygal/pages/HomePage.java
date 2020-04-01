@@ -17,4 +17,10 @@ public class HomePage extends BasePage {
      @FindBy(css = ".user-link-item.link-item-login")
      public WebElement myAccount;
 
+
+    public void clickOnMyAccount()
+    {
+        myAccount.click();
+    }
+
 }
