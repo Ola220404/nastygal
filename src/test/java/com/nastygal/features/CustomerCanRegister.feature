@@ -6,23 +6,22 @@ Feature: Register for a new account
   Scenario Outline: Customer can register
     Given I navigate to nastygal homepage
     When I click on My Account
-    And I click on "<CREATE ACCOUNT>"
-    And I enter "<Title>" in the tittle field
-    And I enter "<FirstName>" in the first name field
-    And I enter "<LastName>" in the last name field
-    And I enter "<DateOfBirth>" in the date of birth field
-    And I select "<Gender>" from the gender dropdown
-    And I enter "<EmailAddress>" in the email address field
+    And I click on CREATE ACCOUNT button
+    And I enter "<FirstName>" in the tittle field
+    And I enter "<LastName>" in the first name field
+    And I enter "<DateOfBirth>" in the last name field
+    And I enter "<Gender>" in the date of birth field
+    And I select "<EmailAddress>" from the gender dropdown
     And I enter "<EmailAddress>" in the confirm email address field
     And I enter "<Password>" in the password field
     And I enter "<Password>" in the confirm password field
-    And I click on "<REGISTER>"
-    Then I am taken to "<nastygal>" homepage
+    And I click on REGISTER button
+    Then I am taken to nastygal homepage
 
     Examples:
-      |Title| FirstName|LastName|DateOfBirth|Gender|EmailAddress        |Password|
-      |Mr    |Joss      |Ola     |13/04/1980 |M     |Auuto@mailinator.com| Boohoo123|
-     ## |Mr    |Joss     |  Ola    |           |M     |Auuto@mailinator.com |Boohoo123|
+      |FirstName|LastName|DateOfBirth|Gender|EmailAddress        |Password|
+      |Joss     |Ola    | 13/04/1980 |M     |Auuto@mailinator.com| Boohoo123|
+     #|Mr    |Joss     |  Ola   |           |M     |Auuto@mailinator.com |Boohoo123|
 
 
     @ignore
