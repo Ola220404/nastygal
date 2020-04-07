@@ -30,7 +30,7 @@ public class RegisterSteps extends BasePage
     }
     @And("I click on CREATE ACCOUNT button")
     public void iClickOnCreateAccount() {
-        loginPage.clickOnCreateAccount();
+       createAccountPage = loginPage.clickOnCreateAccount();
     }
 
     @And("I enter {string} in the first name field")
@@ -45,27 +45,27 @@ public class RegisterSteps extends BasePage
     }
 
     @And("I enter {string} in the date of birth field")
-    public void iEnterInTheDateOfBirthField(String arg0) {
+    public void iEnterInTheDateOfBirthField(String birthday) {
     }
 
     @And("I select {string} from the gender dropdown")
-    public void iSelectFromTheGenderDropdown(String arg0) {
+    public void iSelectFromTheGenderDropdown(String gender) {
     }
 
     @And("I enter {string} in the email address field")
-    public void iEnterInTheEmailAddressField(String arg0) {
+    public void iEnterInTheEmailAddressField(String email) {
     }
 
     @And("I enter {string} in the confirm email address field")
-    public void iEnterInTheConfirmEmailAddressField(String arg0) {
+    public void iEnterInTheConfirmEmailAddressField(String email) {
     }
 
     @And("I enter {string} in the password field")
-    public void iEnterInThePasswordField(String arg0) {
+    public void iEnterInThePasswordField(String password) {
     }
 
     @And("I enter {string} in the confirm password field")
-    public void iEnterInTheConfirmPasswordField(String arg0) {
+    public void iEnterInTheConfirmPasswordField(String password) {
     }
 
     @And("I click on REGISTER button")

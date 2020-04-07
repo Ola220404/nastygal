@@ -10,7 +10,7 @@ Feature: Register for a new account
     And I enter "<FirstName>" in the first name field
     And I enter "<LastName>" in the last name field
     And I enter "<DateOfBirth>" in the date of birth field
-    And I select "<M>" from the gender drop down
+    And I select "<M>" from the gender dropdown
     And I enter "<EmailAddress>" in the email address field
     And I enter "<EmailAddress>" in the confirm email address field
     And I enter "<Password>" in the password field

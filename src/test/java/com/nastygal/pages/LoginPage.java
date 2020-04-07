@@ -15,9 +15,11 @@ public class LoginPage extends BasePage {
     @FindBy(name = "dwfrm_login_register")
     public WebElement CreateAccount;
 
-    public void clickOnCreateAccount()
+    public CreateAccountPage clickOnCreateAccount()
     {
         CreateAccount.click();
+
+        return new CreateAccountPage(driver);
 
     }
 

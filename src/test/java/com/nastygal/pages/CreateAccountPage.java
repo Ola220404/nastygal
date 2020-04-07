@@ -17,7 +17,7 @@ public class CreateAccountPage extends BasePage {
      @FindBy(name = "dwfrm_profile_customer_lastname")
      private WebElement lastNameField;
 
-     public void firstName(String firstName)
+     public void enterFirstName(String firstName)
 
     {
       firstNameField.clear();
@@ -25,16 +25,12 @@ public class CreateAccountPage extends BasePage {
 
     }
 
-    public void lastName(String lastName)
+    public void enterLastName(String lastName)
     {
         lastNameField.clear();
         lastNameField.sendKeys(lastName);
     }
 
-    public void enterFirstName(String firstName) {
-    }
-    public void enterLastName(String lastName) {
 
-    }
 }
 
