@@ -7,11 +7,11 @@ Feature: Register for a new account
     Given I navigate to nastygal homepage
     When I click on My Account
     And I click on CREATE ACCOUNT button
-    And I enter "<FirstName>" in the tittle field
-    And I enter "<LastName>" in the first name field
-    And I enter "<DateOfBirth>" in the last name field
-    And I enter "<Gender>" in the date of birth field
-    And I select "<EmailAddress>" from the gender dropdown
+    And I enter "<FirstName>" in the first name field
+    And I enter "<LastName>" in the last name field
+    And I enter "<DateOfBirth>" in the date of birth field
+    And I select "<M>" from the gender drop down
+    And I enter "<EmailAddress>" in the email address field
     And I enter "<EmailAddress>" in the confirm email address field
     And I enter "<Password>" in the password field
     And I enter "<Password>" in the confirm password field
@@ -21,7 +21,7 @@ Feature: Register for a new account
     Examples:
       |FirstName|LastName|DateOfBirth|Gender|EmailAddress        |Password|
       |Joss     |Ola    | 13/04/1980 |M     |Auuto@mailinator.com| Boohoo123|
-     #|Mr    |Joss     |  Ola   |           |M     |Auuto@mailinator.com |Boohoo123|
+     ##|Joss   |Ola    |  13/04/1980 |M     |Auuto@mailinator.com |Boohoo123|
 
 
     @ignore

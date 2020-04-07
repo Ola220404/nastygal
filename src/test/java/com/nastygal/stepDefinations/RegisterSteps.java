@@ -44,10 +44,6 @@ public class RegisterSteps extends BasePage
 
     }
 
-    @And("I enter {string} in the tittle field")
-    public void iEnterInTheTittleField(String sex) {
-    }
-
     @And("I enter {string} in the date of birth field")
     public void iEnterInTheDateOfBirthField(String arg0) {
     }
