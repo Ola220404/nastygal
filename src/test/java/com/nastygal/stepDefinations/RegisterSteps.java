@@ -41,15 +41,24 @@ public class RegisterSteps extends BasePage
     @And("I enter {string} in the last name field")
     public void iEnterInTheLastNameField(String lastName) {
         createAccountPage.enterLastName(lastName);
+    }
+    @And("I enter {string} in the birth day field")
+    public void iEnterInTheBirthDayField(String dateOfBirth) {
+        createAccountPage.enterDayOfBirth(dateOfBirth);
 
     }
-
-    @And("I enter {string} in the date of birth field")
-    public void iEnterInTheDateOfBirthField(String birthday) {
+    @And("I enter {string} in the birth month field")
+    public void iEnterInTheBirthMonthField(String birthMonth) {
+        createAccountPage.enterMonthOfBirth(birthMonth);
+    }
+    @And("I enter {string} in the birth year field")
+    public void iEnterInTheBirthYearField(String yearOfBirth) {
+        createAccountPage.enterYearOfBirth(yearOfBirth);
     }
 
-    @And("I select {string} from the gender dropdown")
-    public void iSelectFromTheGenderDropdown(String gender) {
+    @And("I select {string} from the gender drop down")
+    public void iSelectFromTheGenderDropDown(String gender) {
+         createAccountPage.setCustomerGender(gender);
     }
 
     @And("I enter {string} in the email address field")
@@ -80,5 +89,5 @@ public class RegisterSteps extends BasePage
     public void iGetAnErrorMessageOrAPromptForTheMissingField() {
     }
 
-
 }
+

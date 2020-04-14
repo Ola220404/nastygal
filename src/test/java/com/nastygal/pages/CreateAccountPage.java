@@ -16,13 +16,19 @@ public class CreateAccountPage extends BasePage {
 
      @FindBy(name = "dwfrm_profile_customer_lastname")
      private WebElement lastNameField;
+     @FindBy(name = "dwfrm_profile_customer_dayofbirth")
+     private WebElement dayOfBirthField;
+     @FindBy(name = "dwfrm_profile_customer_monthofbirth")
+     private WebElement monthOfBirthField;
+     @FindBy(name = "dwfrm_profile_customer_yearofbirth")
+     private WebElement yearOfBirthField;
+     @FindBy(name = "dwfrm_profile_customer_gender")
+     private WebElement customerGender;
 
      public void enterFirstName(String firstName)
-
-    {
+     {
       firstNameField.clear();
       firstNameField.sendKeys(firstName);
-
     }
 
     public void enterLastName(String lastName)
@@ -30,7 +36,24 @@ public class CreateAccountPage extends BasePage {
         lastNameField.clear();
         lastNameField.sendKeys(lastName);
     }
-
-
+    public void enterDayOfBirth(String dayOfBirth)
+    {
+        dayOfBirthField.clear();
+        dayOfBirthField.sendKeys(dayOfBirth);
+    }
+    public void enterMonthOfBirth(String monthOfBirth)
+    {
+        monthOfBirthField.clear();
+        monthOfBirthField.sendKeys(monthOfBirth);
+    }
+    public void enterYearOfBirth(String yearOfBirth)
+    {
+        yearOfBirthField.clear();
+        yearOfBirthField.sendKeys(yearOfBirth);
+    }
+    public void setCustomerGender(String gender)
+    {
+        selectElementByVisibleText(customerGender,gender);
+    }
 }
 
