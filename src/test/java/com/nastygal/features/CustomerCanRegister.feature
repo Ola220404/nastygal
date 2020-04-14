@@ -20,6 +20,7 @@ Feature: Register for a new account
     And I click on REGISTER button
     Then I am taken to nastygal homepage
 
+
     Examples:
       |FirstName|LastName|BirthDay|BirthMonth|BirthYear|Gender|EmailAddress        |Password|
       |Joss     |Ola    | 13       |04       |1980     |Male  |Auuto@mailinator.com| Boohoo123|

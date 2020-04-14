@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc73e571-247f-45e4-a862-77642be62a87" name="Default Changelist" comment="Adding code to input details">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="dc73e571-247f-45e4-a862-77642be62a87" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/nastygal/features/CustomerCanRegister.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nastygal/features/CustomerCanRegister.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nastygal/pages/CreateAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nastygal/pages/CreateAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nastygal/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nastygal/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nastygal/stepDefinations/RegisterSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nastygal/stepDefinations/RegisterSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586269293843</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updating Form Page">
+      <created>1586889497027</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586889497027</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -164,7 +167,8 @@
     <MESSAGE value="code to click my account" />
     <MESSAGE value="Update code to click Account" />
     <MESSAGE value="Adding code to input details" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding code to input details" />
+    <MESSAGE value="Updating Form Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating Form Page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="216" y="42" key="#TestRunner" timestamp="1585847090592">
@@ -181,8 +185,8 @@
     <state x="618" y="314" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1583525762786" />
     <state x="515" y="296" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1280.716@0.23.1280.716" timestamp="1585846864795" />
     <state x="515" y="299" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1280.723/1280.23.1920.1057@0.23.1280.723" timestamp="1586293344179" />
-    <state x="340" y="23" width="752" height="723" key="CommitChangelistDialog2" timestamp="1586444881026">
-      <screen x="0" y="23" width="1280" height="723" />
+    <state x="1790" y="23" width="752" height="723" key="CommitChangelistDialog2" timestamp="1586889496663">
+      <screen x="1280" y="23" width="1920" height="989" />
     </state>
     <state x="510" y="4" key="CommitChangelistDialog2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582107625428" />
     <state x="408" y="3" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1585824991673" />
@@ -191,6 +195,7 @@
     <state x="340" y="23" width="752" height="723" key="CommitChangelistDialog2/0.23.1280.723/1280.23.1920.1057@0.23.1280.723" timestamp="1586271599816" />
     <state x="340" y="23" key="CommitChangelistDialog2/0.23.1280.723@0.23.1280.723" timestamp="1586444881026" />
     <state x="340" y="23" width="752" height="777" key="CommitChangelistDialog2/0.23.1280.777/1280.23.1920.989@0.23.1280.777" timestamp="1586271561569" />
+    <state x="1790" y="23" key="CommitChangelistDialog2/0.23.1280.777/1280.23.1920.989@1280.23.1920.989" timestamp="1586889496663" />
     <state x="548" y="153" key="FileChooserDialogImpl" timestamp="1583084800479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -243,12 +248,13 @@
     <state width="1238" height="159" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1586198332511" />
     <state width="1238" height="159" key="GridCell.Tab.0.right/0.23.1280.777/1280.23.1920.989@0.23.1280.777" timestamp="1586555596250" />
     <state width="1238" height="159" key="GridCell.Tab.0.right/0.23.1280.777/1280.23.1920.989@1280.23.1920.989" timestamp="1586889374705" />
-    <state x="288" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586269298872">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="1712" y="178" key="Vcs.Push.Dialog.v2" timestamp="1586889501846">
+      <screen x="1280" y="23" width="1920" height="989" />
     </state>
     <state x="433" y="163" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582107632952" />
     <state x="346" y="129" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585762231193" />
     <state x="288" y="145" key="Vcs.Push.Dialog.v2/0.23.1280.777/1280.23.1920.989@0.23.1280.777" timestamp="1586269298872" />
+    <state x="1712" y="178" key="Vcs.Push.Dialog.v2/0.23.1280.777/1280.23.1920.989@1280.23.1920.989" timestamp="1586889501846" />
     <state x="495" y="203" key="git4idea.merge.GitPullDialog" timestamp="1583687700329">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

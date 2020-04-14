@@ -1,0 +1,281 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-04-14T18:34:26.073Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4564000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.nastygal.hooks.Hook.setup()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Customer can register",
+        "description": "",
+        "id": "register-for-a-new-account;customer-can-register;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 360000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.nastygal.hooks.Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6117000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I navigate to nastygal homepage",
+            "match": {
+              "location": "com.nastygal.stepDefinations.RegisterSteps.i_navigate_to_nastygal_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 761000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on My Account",
+            "match": {
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iClickOnMyAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3068000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on CREATE ACCOUNT button",
+            "match": {
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iClickOnCreateAccount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2003000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter \"Joss\" in the first name field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Joss\"",
+                  "offset": 8
+                }
+              ],
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iEnterInTheFirstNameField(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 266000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I enter \"Ola\" in the last name field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ola\"",
+                  "offset": 8
+                }
+              ],
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iEnterInTheLastNameField(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 253000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I enter \"13\" in the birth day field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"13\"",
+                  "offset": 8
+                }
+              ],
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iEnterInTheBirthDayField(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 218000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I enter \"04\" in the birth month field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"04\"",
+                  "offset": 8
+                }
+              ],
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iEnterInTheBirthMonthField(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 213000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I enter \"1980\" in the birth year field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1980\"",
+                  "offset": 8
+                }
+              ],
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iEnterInTheBirthYearField(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 338000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I select \"Male\" from the gender drop down",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Male\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iSelectFromTheGenderDropDown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter \"Auuto@mailinator.com\" in the email address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Auuto@mailinator.com\"",
+                  "offset": 8
+                }
+              ],
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iEnterInTheEmailAddressField(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter \"Auuto@mailinator.com\" in the confirm email address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Auuto@mailinator.com\"",
+                  "offset": 8
+                }
+              ],
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iEnterInTheConfirmEmailAddressField(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I enter \"Boohoo123\" in the password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Boohoo123\"",
+                  "offset": 8
+                }
+              ],
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iEnterInThePasswordField(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I enter \"Boohoo123\" in the confirm password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Boohoo123\"",
+                  "offset": 8
+                }
+              ],
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iEnterInTheConfirmPasswordField(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on REGISTER button",
+            "match": {
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iClickOnRegisterButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I am taken to nastygal homepage",
+            "match": {
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iAmTakenToNastyGalHomepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Register for a new account",
+    "description": "  As a Customer\n  I want the ability to register on web or when i download the app",
+    "id": "register-for-a-new-account",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/nastygal/features/CustomerCanRegister.feature",
+    "tags": []
+  }
+]
