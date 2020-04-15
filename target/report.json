@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-04-14T18:34:26.073Z",
+        "start_timestamp": "2020-04-15T17:13:16.580Z",
         "before": [
           {
             "result": {
-              "duration": 4564000000,
+              "duration": 4093000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 25,
+        "line": 26,
         "name": "Customer can register",
         "description": "",
         "id": "register-for-a-new-account;customer-can-register;;2",
         "after": [
           {
             "result": {
-              "duration": 360000000,
+              "duration": 321000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6117000000,
+              "duration": 3142000000,
               "status": "passed"
             },
             "line": 7,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 761000000,
+              "duration": 1047000000,
               "status": "passed"
             },
             "line": 8,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 3068000000,
+              "duration": 3364000000,
               "status": "passed"
             },
             "line": 9,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 2003000000,
+              "duration": 298000000,
               "status": "passed"
             },
             "line": 10,
@@ -89,7 +89,7 @@
           },
           {
             "result": {
-              "duration": 266000000,
+              "duration": 160000000,
               "status": "passed"
             },
             "line": 11,
@@ -107,7 +107,7 @@
           },
           {
             "result": {
-              "duration": 253000000,
+              "duration": 210000000,
               "status": "passed"
             },
             "line": 12,
@@ -125,7 +125,7 @@
           },
           {
             "result": {
-              "duration": 218000000,
+              "duration": 141000000,
               "status": "passed"
             },
             "line": 13,
@@ -143,7 +143,7 @@
           },
           {
             "result": {
-              "duration": 213000000,
+              "duration": 158000000,
               "status": "passed"
             },
             "line": 14,
@@ -161,7 +161,7 @@
           },
           {
             "result": {
-              "duration": 338000000,
+              "duration": 235000000,
               "status": "passed"
             },
             "line": 15,
@@ -179,6 +179,7 @@
           },
           {
             "result": {
+              "duration": 365000000,
               "status": "passed"
             },
             "line": 16,
@@ -196,6 +197,7 @@
           },
           {
             "result": {
+              "duration": 336000000,
               "status": "passed"
             },
             "line": 17,
@@ -213,7 +215,9 @@
           },
           {
             "result": {
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name\u003d\u0027dwfrm_profile_login_password_d0dnfnitbvju\u0027]\"}\n  (Session info: chrome\u003d80.0.3987.163)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Olalekans-MBP\u0027, ip: \u00272a00:23c8:381:1b00:9d7a:123b:4ea:c0e6%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.1\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/5s/cssx7cx11td...}, goog:chromeOptions: {debuggerAddress: localhost:49500}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 6d81b5a751afd8ac1198395627103cfc\n*** Element info: {Using\u003dname, value\u003ddwfrm_profile_login_password_d0dnfnitbvju}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)\n\tat org.openqa.selenium.By$ByName.findElement(By.java:284)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy18.clear(Unknown Source)\n\tat com.nastygal.pages.CreateAccountPage.enterPassword(CreateAccountPage.java:76)\n\tat com.nastygal.stepDefinations.RegisterSteps.iEnterInThePasswordField(RegisterSteps.java:76)\n\tat ✽.I enter \"Boohoo123\" in the password field(file:///Users/olalekandaranijo/Documents/projects/src/test/java/com/nastygal/features/CustomerCanRegister.feature:18)\n",
+              "duration": 10067000000,
+              "status": "failed"
             },
             "line": 18,
             "name": "I enter \"Boohoo123\" in the password field",
@@ -230,8 +234,7 @@
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 19,
             "name": "I enter \"Boohoo123\" in the confirm password field",
@@ -248,7 +251,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 20,
             "name": "I click on REGISTER button",
@@ -259,7 +262,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 21,
             "name": "I am taken to nastygal homepage",

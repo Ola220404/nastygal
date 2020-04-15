@@ -13,7 +13,6 @@ public class CreateAccountPage extends BasePage {
      }
      @FindBy(name = "dwfrm_profile_customer_firstname")
      private WebElement firstNameField;
-
      @FindBy(name = "dwfrm_profile_customer_lastname")
      private WebElement lastNameField;
      @FindBy(name = "dwfrm_profile_customer_dayofbirth")
@@ -24,6 +23,13 @@ public class CreateAccountPage extends BasePage {
      private WebElement yearOfBirthField;
      @FindBy(name = "dwfrm_profile_customer_gender")
      private WebElement customerGender;
+     @FindBy(id = "dwfrm_profile_customer_email")
+     private WebElement customerEmail;
+     @FindBy(id = "dwfrm_profile_customer_emailconfirm")
+     private WebElement customerEmailConfirm;
+     @FindBy(name = "dwfrm_profile_login_password_d0dnfnitbvju")
+     private WebElement passwordField;
+
 
      public void enterFirstName(String firstName)
      {
@@ -55,5 +61,22 @@ public class CreateAccountPage extends BasePage {
     {
         selectElementByVisibleText(customerGender,gender);
     }
+    public void enterCustomerEmail(String email)
+    {
+        customerEmail.clear();
+        customerEmail.sendKeys(email);
+    }
+    public void enterCustomerEmailConfirm(String emailConfirm)
+    {
+        customerEmailConfirm.clear();
+        customerEmailConfirm.sendKeys(emailConfirm);
+    }
+    public void enterPassword(String password)
+    {
+        passwordField.clear();
+        passwordField.sendKeys(password);
+    }
+
+
 }
 

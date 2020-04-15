@@ -23,8 +23,8 @@ Feature: Register for a new account
 
     Examples:
       |FirstName|LastName|BirthDay|BirthMonth|BirthYear|Gender|EmailAddress        |Password|
-      |Joss     |Ola    | 13       |04       |1980     |Male  |Auuto@mailinator.com| Boohoo123|
-     ##|Joss   |Ola    |  13       |04       |1980     |Male    |Auuto@mailinator.com |Boohoo123|
+      |Joss     |Ola    | 13       |04       |1980     |Male  |Auuto@mailinator.com|Boohoo123|
+     ##|Joss   |Ola    |  13       |04       |1980     |Male  |Auuto@mailinator.com |Boohoo123|
 
 
     @ignore

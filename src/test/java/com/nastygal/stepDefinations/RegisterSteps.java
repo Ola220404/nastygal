@@ -63,18 +63,23 @@ public class RegisterSteps extends BasePage
 
     @And("I enter {string} in the email address field")
     public void iEnterInTheEmailAddressField(String email) {
+        createAccountPage.enterCustomerEmail(email);
     }
 
     @And("I enter {string} in the confirm email address field")
-    public void iEnterInTheConfirmEmailAddressField(String email) {
+    public void iEnterInTheConfirmEmailAddressField(String emailConfirm) {
+        createAccountPage.enterCustomerEmailConfirm(emailConfirm);
     }
 
     @And("I enter {string} in the password field")
     public void iEnterInThePasswordField(String password) {
+        createAccountPage.enterPassword(password);
+
     }
 
     @And("I enter {string} in the confirm password field")
-    public void iEnterInTheConfirmPasswordField(String password) {
+    public void iEnterInTheConfirmPasswordField(String confirmPassword) {
+
     }
 
     @And("I click on REGISTER button")
