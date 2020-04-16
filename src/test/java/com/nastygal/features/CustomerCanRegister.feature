@@ -18,7 +18,7 @@ Feature: Register for a new account
     And I enter "<Password>" in the password field
     And I enter "<Password>" in the confirm password field
     And I click on REGISTER button
-    Then I am taken to nastygal homepage
+    Then I am taken to nastygal contentpage
 
 
     Examples:

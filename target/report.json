@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-04-15T17:13:16.580Z",
+        "start_timestamp": "2020-04-16T21:29:40.579Z",
         "before": [
           {
             "result": {
-              "duration": 4093000000,
+              "duration": 3386000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 321000000,
+              "duration": 368000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3142000000,
+              "duration": 3109000000,
               "status": "passed"
             },
             "line": 7,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 1047000000,
+              "duration": 979000000,
               "status": "passed"
             },
             "line": 8,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 3364000000,
+              "duration": 2474000000,
               "status": "passed"
             },
             "line": 9,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 298000000,
+              "duration": 506000000,
               "status": "passed"
             },
             "line": 10,
@@ -89,7 +89,7 @@
           },
           {
             "result": {
-              "duration": 160000000,
+              "duration": 196000000,
               "status": "passed"
             },
             "line": 11,
@@ -107,7 +107,7 @@
           },
           {
             "result": {
-              "duration": 210000000,
+              "duration": 165000000,
               "status": "passed"
             },
             "line": 12,
@@ -125,7 +125,7 @@
           },
           {
             "result": {
-              "duration": 141000000,
+              "duration": 150000000,
               "status": "passed"
             },
             "line": 13,
@@ -143,7 +143,7 @@
           },
           {
             "result": {
-              "duration": 158000000,
+              "duration": 157000000,
               "status": "passed"
             },
             "line": 14,
@@ -161,7 +161,7 @@
           },
           {
             "result": {
-              "duration": 235000000,
+              "duration": 193000000,
               "status": "passed"
             },
             "line": 15,
@@ -179,7 +179,7 @@
           },
           {
             "result": {
-              "duration": 365000000,
+              "duration": 326000000,
               "status": "passed"
             },
             "line": 16,
@@ -197,7 +197,7 @@
           },
           {
             "result": {
-              "duration": 336000000,
+              "duration": 358000000,
               "status": "passed"
             },
             "line": 17,
@@ -215,9 +215,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name\u003d\u0027dwfrm_profile_login_password_d0dnfnitbvju\u0027]\"}\n  (Session info: chrome\u003d80.0.3987.163)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Olalekans-MBP\u0027, ip: \u00272a00:23c8:381:1b00:9d7a:123b:4ea:c0e6%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.1\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/5s/cssx7cx11td...}, goog:chromeOptions: {debuggerAddress: localhost:49500}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 6d81b5a751afd8ac1198395627103cfc\n*** Element info: {Using\u003dname, value\u003ddwfrm_profile_login_password_d0dnfnitbvju}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)\n\tat org.openqa.selenium.By$ByName.findElement(By.java:284)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy18.clear(Unknown Source)\n\tat com.nastygal.pages.CreateAccountPage.enterPassword(CreateAccountPage.java:76)\n\tat com.nastygal.stepDefinations.RegisterSteps.iEnterInThePasswordField(RegisterSteps.java:76)\n\tat ✽.I enter \"Boohoo123\" in the password field(file:///Users/olalekandaranijo/Documents/projects/src/test/java/com/nastygal/features/CustomerCanRegister.feature:18)\n",
-              "duration": 10067000000,
-              "status": "failed"
+              "duration": 200000000,
+              "status": "passed"
             },
             "line": 18,
             "name": "I enter \"Boohoo123\" in the password field",
@@ -234,7 +233,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 197000000,
+              "status": "passed"
             },
             "line": 19,
             "name": "I enter \"Boohoo123\" in the confirm password field",
@@ -251,7 +251,9 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cbutton type\u003d\"submit\" value\u003d\"Register\" name\u003d\"dwfrm_profile_confirm\"\u003e...\u003c/button\u003e is not clickable at point (810, 584). Other element would receive the click: \u003ca href\u003d\"https://www.nastygal.com/gb/whats-new?promo_bottomstrip_1_whats-new\" class\u003d\"banner-link banner-link-black\" style\u003d\"padding:15px;\"\u003e...\u003c/a\u003e\n  (Session info: chrome\u003d80.0.3987.163)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Olalekans-MBP\u0027, ip: \u00272a00:23c8:381:1b00:c1c3:cd59:8418:de28%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.1\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/5s/cssx7cx11td...}, goog:chromeOptions: {debuggerAddress: localhost:64358}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 5724238534244bacd11c1fb39ae617ff\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\n\tat com.nastygal.pages.CreateAccountPage.clickOnRegisterButton(CreateAccountPage.java:91)\n\tat com.nastygal.stepDefinations.RegisterSteps.iClickOnRegisterButton(RegisterSteps.java:83)\n\tat ✽.I click on REGISTER button(file:///Users/olalekandaranijo/Documents/projects/src/test/java/com/nastygal/features/CustomerCanRegister.feature:20)\n",
+              "duration": 1128000000,
+              "status": "failed"
             },
             "line": 20,
             "name": "I click on REGISTER button",
@@ -265,9 +267,9 @@
               "status": "skipped"
             },
             "line": 21,
-            "name": "I am taken to nastygal homepage",
+            "name": "I am taken to nastygal contentpage",
             "match": {
-              "location": "com.nastygal.stepDefinations.RegisterSteps.iAmTakenToNastyGalHomepage()"
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iAmTakenToNastyGalContentpage()"
             },
             "keyword": "Then "
           }

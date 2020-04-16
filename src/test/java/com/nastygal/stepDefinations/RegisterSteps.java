@@ -1,9 +1,6 @@
 package com.nastygal.stepDefinations;
 
-import com.nastygal.pages.BasePage;
-import com.nastygal.pages.CreateAccountPage;
-import com.nastygal.pages.HomePage;
-import com.nastygal.pages.LoginPage;
+import com.nastygal.pages.*;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -16,6 +13,7 @@ public class RegisterSteps extends BasePage
     HomePage homePage = PageFactory.initElements(driver, HomePage.class);
     LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
     CreateAccountPage createAccountPage = PageFactory.initElements(driver, CreateAccountPage.class);
+    ContentPage contentPage = PageFactory.initElements(driver, ContentPage.class);
 
 
     @Given("I navigate to nastygal homepage")
@@ -74,20 +72,20 @@ public class RegisterSteps extends BasePage
     @And("I enter {string} in the password field")
     public void iEnterInThePasswordField(String password) {
         createAccountPage.enterPassword(password);
-
     }
 
     @And("I enter {string} in the confirm password field")
     public void iEnterInTheConfirmPasswordField(String confirmPassword) {
-
+        createAccountPage.enterPasswordConfirm(confirmPassword);
     }
-
     @And("I click on REGISTER button")
     public void iClickOnRegisterButton() {
+        contentPage = createAccountPage.clickOnRegisterButton();
+
     }
 
-    @Then("I am taken to nastygal homepage")
-    public void iAmTakenToNastyGalHomepage() {
+    @Then("I am taken to nastygal contentpage")
+    public void iAmTakenToNastyGalContentpage() {
     }
 
     @Then("I get an error message or a prompt for the missing field")

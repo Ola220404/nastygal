@@ -1,5 +1,7 @@
 package com.nastygal.pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,8 +29,12 @@ public class CreateAccountPage extends BasePage {
      private WebElement customerEmail;
      @FindBy(id = "dwfrm_profile_customer_emailconfirm")
      private WebElement customerEmailConfirm;
-     @FindBy(name = "dwfrm_profile_login_password_d0dnfnitbvju")
+     @FindBy(css = "input[id*='dwfrm_profile_login_password_']")
      private WebElement passwordField;
+     @FindBy(css = "input[id*='dwfrm_profile_login_passwordconfirm_']")
+     private WebElement passwordConfirmField;
+     @FindBy(name = "dwfrm_profile_confirm")
+     private WebElement registerButton;
 
 
      public void enterFirstName(String firstName)
@@ -75,6 +81,18 @@ public class CreateAccountPage extends BasePage {
     {
         passwordField.clear();
         passwordField.sendKeys(password);
+    }
+    public void enterPasswordConfirm(String passwordConfirm)
+    {
+        passwordConfirmField.clear();
+        passwordConfirmField.sendKeys(passwordConfirm);
+    }
+
+    public ContentPage clickOnRegisterButton()
+    {
+        registerButton.click();
+        return new ContentPage(driver);
+
     }
 
 
