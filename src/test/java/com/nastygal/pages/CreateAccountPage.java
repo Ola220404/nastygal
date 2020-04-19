@@ -90,6 +90,7 @@ public class CreateAccountPage extends BasePage {
 
     public ContentPage clickOnRegisterButton()
     {
+        waitForElementToBeClick(registerButton);
         registerButton.click();
         return new ContentPage(driver);
 
