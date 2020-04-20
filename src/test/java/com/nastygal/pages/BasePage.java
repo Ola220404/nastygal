@@ -1,7 +1,9 @@
 package com.nastygal.pages;
 
 import com.nastygal.common.DriverLib;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -11,6 +13,7 @@ public class BasePage extends DriverLib
 {
     public String BASE_URL = "https://www.nastygal.com/";
     public Select select;
+    public JavascriptExecutor js;
 
 
     public void launchUrl()
@@ -39,5 +42,13 @@ public class BasePage extends DriverLib
         select = new Select(element);
         select.selectByIndex(index);
     }
+
+    public void scrollDown()
+    {
+        js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,800)");
+    }
+
+
 }
 
