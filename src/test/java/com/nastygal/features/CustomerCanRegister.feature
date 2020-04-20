@@ -9,19 +9,22 @@ Feature: Register for a new account
     And I click on CREATE ACCOUNT button
     And I enter "<FirstName>" in the first name field
     And I enter "<LastName>" in the last name field
-    And I enter "<DateOfBirth>" in the date of birth field
-    And I select "<M>" from the gender dropdown
+    And I enter "<BirthDay>" in the birth day field
+    And I enter "<BirthMonth>" in the birth month field
+    And I enter "<BirthYear>" in the birth year field
+    And I select "<Gender>" from the gender drop down
     And I enter "<EmailAddress>" in the email address field
     And I enter "<EmailAddress>" in the confirm email address field
     And I enter "<Password>" in the password field
     And I enter "<Password>" in the confirm password field
     And I click on REGISTER button
-    Then I am taken to nastygal homepage
+    Then I am taken to nastygal contentpage
+
 
     Examples:
-      |FirstName|LastName|DateOfBirth|Gender|EmailAddress        |Password|
-      |Joss     |Ola    | 13/04/1980 |M     |Auuto@mailinator.com| Boohoo123|
-     ##|Joss   |Ola    |  13/04/1980 |M     |Auuto@mailinator.com |Boohoo123|
+      |FirstName|LastName|BirthDay|BirthMonth|BirthYear|Gender|EmailAddress        |Password|
+      |Joss     |Ola    | 13       |04       |1980     |Male  |Auuto@mailinator.com|Boohoo123|
+     ##|Joss   |Ola    |  13       |04       |1980     |Male  |Auuto@mailinator.com |Boohoo123|
 
 
     @ignore

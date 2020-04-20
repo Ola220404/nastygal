@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-04-07T20:32:35.587Z",
+        "start_timestamp": "2020-04-19T18:20:02.782Z",
         "before": [
           {
             "result": {
-              "duration": 11980000000,
+              "duration": 8086000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 23,
+        "line": 26,
         "name": "Customer can register",
         "description": "",
         "id": "register-for-a-new-account;customer-can-register;;2",
         "after": [
           {
             "result": {
-              "duration": 1434000000,
+              "duration": 818000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5416000000,
+              "duration": 6832000000,
               "status": "passed"
             },
             "line": 7,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 2144000000,
+              "duration": 1744000000,
               "status": "passed"
             },
             "line": 8,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 3524000000,
+              "duration": 6441000000,
               "status": "passed"
             },
             "line": 9,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 292000000,
+              "duration": 646000000,
               "status": "passed"
             },
             "line": 10,
@@ -89,7 +89,7 @@
           },
           {
             "result": {
-              "duration": 374000000,
+              "duration": 347000000,
               "status": "passed"
             },
             "line": 11,
@@ -107,43 +107,82 @@
           },
           {
             "result": {
+              "duration": 333000000,
               "status": "passed"
             },
             "line": 12,
-            "name": "I enter \"13/04/1980\" in the date of birth field",
+            "name": "I enter \"13\" in the birth day field",
             "match": {
               "arguments": [
                 {
-                  "val": "\"13/04/1980\"",
+                  "val": "\"13\"",
                   "offset": 8
                 }
               ],
-              "location": "com.nastygal.stepDefinations.RegisterSteps.iEnterInTheDateOfBirthField(java.lang.String)"
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iEnterInTheBirthDayField(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
+              "duration": 322000000,
               "status": "passed"
             },
             "line": 13,
-            "name": "I select \"\u003cM\u003e\" from the gender dropdown",
+            "name": "I enter \"04\" in the birth month field",
             "match": {
               "arguments": [
                 {
-                  "val": "\"\u003cM\u003e\"",
-                  "offset": 9
+                  "val": "\"04\"",
+                  "offset": 8
                 }
               ],
-              "location": "com.nastygal.stepDefinations.RegisterSteps.iSelectFromTheGenderDropdown(java.lang.String)"
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iEnterInTheBirthMonthField(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
+              "duration": 345000000,
               "status": "passed"
             },
             "line": 14,
+            "name": "I enter \"1980\" in the birth year field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1980\"",
+                  "offset": 8
+                }
+              ],
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iEnterInTheBirthYearField(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 451000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I select \"Male\" from the gender drop down",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Male\"",
+                  "offset": 9
+                }
+              ],
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iSelectFromTheGenderDropDown(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 643000000,
+              "status": "passed"
+            },
+            "line": 16,
             "name": "I enter \"Auuto@mailinator.com\" in the email address field",
             "match": {
               "arguments": [
@@ -158,9 +197,10 @@
           },
           {
             "result": {
+              "duration": 626000000,
               "status": "passed"
             },
-            "line": 15,
+            "line": 17,
             "name": "I enter \"Auuto@mailinator.com\" in the confirm email address field",
             "match": {
               "arguments": [
@@ -175,9 +215,10 @@
           },
           {
             "result": {
+              "duration": 378000000,
               "status": "passed"
             },
-            "line": 16,
+            "line": 18,
             "name": "I enter \"Boohoo123\" in the password field",
             "match": {
               "arguments": [
@@ -192,9 +233,10 @@
           },
           {
             "result": {
+              "duration": 385000000,
               "status": "passed"
             },
-            "line": 17,
+            "line": 19,
             "name": "I enter \"Boohoo123\" in the confirm password field",
             "match": {
               "arguments": [
@@ -209,9 +251,11 @@
           },
           {
             "result": {
-              "status": "passed"
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cbutton type\u003d\"submit\" value\u003d\"Register\" name\u003d\"dwfrm_profile_confirm\"\u003e...\u003c/button\u003e is not clickable at point (810, 585). Other element would receive the click: \u003ca href\u003d\"https://www.nastygal.com/gb/whats-new?promo_bottomstrip_1_whats-new\" class\u003d\"banner-link banner-link-black\" style\u003d\"padding:15px;\"\u003e...\u003c/a\u003e\n  (Session info: chrome\u003d80.0.3987.163)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Olalekans-MBP\u0027, ip: \u00272a00:23c8:381:1b00:893:b70d:ee6e:766b%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.1\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: /var/folders/5s/cssx7cx11td...}, goog:chromeOptions: {debuggerAddress: localhost:52885}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: c5894546c5c49c413523db8bcb674dca\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\n\tat com.nastygal.pages.CreateAccountPage.clickOnRegisterButton(CreateAccountPage.java:94)\n\tat com.nastygal.stepDefinations.RegisterSteps.iClickOnRegisterButton(RegisterSteps.java:83)\n\tat ✽.I click on REGISTER button(file:///Users/olalekandaranijo/Documents/projects/src/test/java/com/nastygal/features/CustomerCanRegister.feature:20)\n",
+              "duration": 1278000000,
+              "status": "failed"
             },
-            "line": 18,
+            "line": 20,
             "name": "I click on REGISTER button",
             "match": {
               "location": "com.nastygal.stepDefinations.RegisterSteps.iClickOnRegisterButton()"
@@ -220,12 +264,12 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 19,
-            "name": "I am taken to nastygal homepage",
+            "line": 21,
+            "name": "I am taken to nastygal contentpage",
             "match": {
-              "location": "com.nastygal.stepDefinations.RegisterSteps.iAmTakenToNastyGalHomepage()"
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iAmTakenToNastyGalContentpage()"
             },
             "keyword": "Then "
           }

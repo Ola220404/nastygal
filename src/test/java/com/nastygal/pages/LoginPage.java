@@ -12,6 +12,8 @@ public class LoginPage extends BasePage {
         PageFactory.initElements(driver, this);
 
     }
+
+
     @FindBy(name = "dwfrm_login_register")
     public WebElement CreateAccount;
 
