@@ -25,6 +25,24 @@ public class LoginPage extends BasePage {
 
     }
 
+    @FindBy(name = "dwfrm_login_username_d0uukftymxzo")
+    public WebElement userEmailAddress;
+
+
+    public void enteruserEmailAddress(String emailAddress)
+    {
+        userEmailAddress.clear();
+        userEmailAddress.sendKeys();
+    }
+
+    @FindBy(name="dwfrm_login_password_d0bsqjzynfna")
+    public WebElement loginPassword;
+
+    public void enterloginPassword(String password)
+    {
+        loginPassword.clear();
+        loginPassword.sendKeys();
+    }
 
 
 

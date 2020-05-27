@@ -86,11 +86,11 @@ public class CreateAccountPage extends BasePage {
 
     }
 
-    public ContentPage clickOnRegisterButton()
+    public WelcomePage clickOnRegisterButton()
     {
         scrollDown();
         registerButton.click();
-        return new ContentPage(driver);
+        return new WelcomePage(driver);
 
     }
 

@@ -3,11 +3,142 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-04-20T12:58:58.007Z",
+        "start_timestamp": "2020-05-16T00:33:53.950Z",
         "before": [
           {
             "result": {
-              "duration": 13923000000,
+              "duration": 4596000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.nastygal.hooks.Hook.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Customer can login",
+        "description": "",
+        "id": "customer-can-login-into-existing-account;customer-can-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 436000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.nastygal.hooks.Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7228000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I navigate to nastygal homepage",
+            "match": {
+              "location": "com.nastygal.stepDefinations.RegisterSteps.i_navigate_to_nastygal_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 687000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on My Account",
+            "match": {
+              "location": "com.nastygal.stepDefinations.RegisterSteps.iClickOnMyAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name\u003d\u0027dwfrm_login_username_d0uukftymxzo\u0027]\"}\n  (Session info: chrome\u003d81.0.4044.138)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Olalekans-MBP\u0027, ip: \u00272a00:23c8:381:1b00:ecbd:2290:6014:2a63%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.1\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: /var/folders/5s/cssx7cx11td...}, goog:chromeOptions: {debuggerAddress: localhost:57624}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: e8054ba05563bf692ec7137b1e30515a\n*** Element info: {Using\u003dname, value\u003ddwfrm_login_username_d0uukftymxzo}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)\n\tat org.openqa.selenium.By$ByName.findElement(By.java:284)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy18.clear(Unknown Source)\n\tat com.nastygal.pages.LoginPage.enteruserEmailAddress(LoginPage.java:34)\n\tat com.nastygal.stepDefinations.LoginStep.iEnteEmailAddressField(LoginStep.java:17)\n\tat ✽.I enter \"jstmine@mailinator.com\" in log in email address field(file:///Users/olalekandaranijo/Documents/nastygal/src/test/java/com/nastygal/features/CustomerCanLogin.feature:8)\n",
+              "duration": 10506000000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "I enter \"jstmine@mailinator.com\" in log in email address field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"jstmine@mailinator.com\"",
+                  "offset": 8
+                }
+              ],
+              "location": "com.nastygal.stepDefinations.LoginStep.iEnteEmailAddressField(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I enter \"boohoo123\" in log in password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"boohoo123\"",
+                  "offset": 8
+                }
+              ],
+              "location": "com.nastygal.stepDefinations.LoginStep.iEnterInLogInPasswordField(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I click on LOG IN SECURELY button",
+            "match": {
+              "location": "com.nastygal.stepDefinations.LoginStep.iClickOnLOGINSECURELYButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I am taken to nastygal welcomepage",
+            "match": {
+              "location": "com.nastygal.stepDefinations.LoginStep.iAmTakenToNastygalWelcomepage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Customer can login into existing account",
+    "description": "         As a customer i want to be able to login into existing account",
+    "id": "customer-can-login-into-existing-account",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/nastygal/features/CustomerCanLogin.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-16T00:34:17.607Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2156000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +153,7 @@
         "after": [
           {
             "result": {
-              "duration": 10090000000,
+              "duration": 473000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +166,7 @@
         "steps": [
           {
             "result": {
-              "duration": 22998000000,
+              "duration": 3237000000,
               "status": "passed"
             },
             "line": 7,
@@ -47,7 +178,7 @@
           },
           {
             "result": {
-              "duration": 314000000,
+              "duration": 1270000000,
               "status": "passed"
             },
             "line": 8,
@@ -59,7 +190,7 @@
           },
           {
             "result": {
-              "duration": 35473000000,
+              "duration": 2246000000,
               "status": "passed"
             },
             "line": 9,
@@ -71,7 +202,7 @@
           },
           {
             "result": {
-              "duration": 384000000,
+              "duration": 1724000000,
               "status": "passed"
             },
             "line": 10,
@@ -89,7 +220,7 @@
           },
           {
             "result": {
-              "duration": 1187000000,
+              "duration": 199000000,
               "status": "passed"
             },
             "line": 11,
@@ -107,7 +238,7 @@
           },
           {
             "result": {
-              "duration": 268000000,
+              "duration": 204000000,
               "status": "passed"
             },
             "line": 12,
@@ -125,7 +256,7 @@
           },
           {
             "result": {
-              "duration": 577000000,
+              "duration": 151000000,
               "status": "passed"
             },
             "line": 13,
@@ -143,7 +274,7 @@
           },
           {
             "result": {
-              "duration": 436000000,
+              "duration": 185000000,
               "status": "passed"
             },
             "line": 14,
@@ -161,7 +292,7 @@
           },
           {
             "result": {
-              "duration": 583000000,
+              "duration": 237000000,
               "status": "passed"
             },
             "line": 15,
@@ -179,7 +310,7 @@
           },
           {
             "result": {
-              "duration": 824000000,
+              "duration": 296000000,
               "status": "passed"
             },
             "line": 16,
@@ -197,7 +328,7 @@
           },
           {
             "result": {
-              "duration": 1032000000,
+              "duration": 381000000,
               "status": "passed"
             },
             "line": 17,
@@ -215,7 +346,7 @@
           },
           {
             "result": {
-              "duration": 571000000,
+              "duration": 254000000,
               "status": "passed"
             },
             "line": 18,
@@ -233,7 +364,7 @@
           },
           {
             "result": {
-              "duration": 854000000,
+              "duration": 220000000,
               "status": "passed"
             },
             "line": 19,
@@ -251,8 +382,9 @@
           },
           {
             "result": {
-              "duration": 704000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cbutton type\u003d\"submit\" value\u003d\"Register\" name\u003d\"dwfrm_profile_confirm\"\u003e...\u003c/button\u003e is not clickable at point (810, 5). Other element would receive the click: \u003cdiv class\u003d\"sticky-header-inner\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d81.0.4044.138)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Olalekans-MBP\u0027, ip: \u00272a00:23c8:381:1b00:ecbd:2290:6014:2a63%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.1\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: /var/folders/5s/cssx7cx11td...}, goog:chromeOptions: {debuggerAddress: localhost:57724}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 880896b26ad7e260a6becbcb0fb86143\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\n\tat com.nastygal.pages.CreateAccountPage.clickOnRegisterButton(CreateAccountPage.java:92)\n\tat com.nastygal.stepDefinations.RegisterSteps.iClickOnRegisterButton(RegisterSteps.java:85)\n\tat ✽.I click on REGISTER button(file:///Users/olalekandaranijo/Documents/nastygal/src/test/java/com/nastygal/features/CustomerCanRegister.feature:20)\n",
+              "duration": 1154000000,
+              "status": "failed"
             },
             "line": 20,
             "name": "I click on REGISTER button",
@@ -263,7 +395,7 @@
           },
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 21,
             "name": "I am taken to nastygal contentpage",

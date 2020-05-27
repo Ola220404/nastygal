@@ -13,7 +13,7 @@ public class RegisterSteps extends BasePage
     HomePage homePage = PageFactory.initElements(driver, HomePage.class);
     LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
     CreateAccountPage createAccountPage = PageFactory.initElements(driver, CreateAccountPage.class);
-    ContentPage contentPage = PageFactory.initElements(driver, ContentPage.class);
+    WelcomePage contentPage = PageFactory.initElements(driver, WelcomePage.class);
 
 
     @Given("I navigate to nastygal homepage")
@@ -28,7 +28,8 @@ public class RegisterSteps extends BasePage
     }
     @And("I click on CREATE ACCOUNT button")
     public void iClickOnCreateAccount() {
-       createAccountPage = loginPage.clickOnCreateAccount();
+
+        createAccountPage = loginPage.clickOnCreateAccount();
     }
 
     @And("I enter {string} in the first name field")
@@ -38,6 +39,7 @@ public class RegisterSteps extends BasePage
     }
     @And("I enter {string} in the last name field")
     public void iEnterInTheLastNameField(String lastName) {
+
         createAccountPage.enterLastName(lastName);
     }
     @And("I enter {string} in the birth day field")
